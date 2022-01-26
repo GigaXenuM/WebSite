@@ -1,0 +1,40 @@
+﻿.Header {
+    background-color: #ffbb00;
+    text-align:center;
+}
+
+.Announcement {
+    background-color: #b8af98;
+}
+
+.Announcement div {
+    margin-left: 2rem;
+}
+
+.Label {
+    font-weight: bold;
+    color: #4d4b46;
+}
+
+.DateAdded div{
+    display: inline;
+}
+
+.btnTitle {
+    width: 100%;
+    text-align: start;
+}
+
+.btnTitle h2{
+    margin-left: 3rem;
+}
+
+.btnForm {
+    width: 100%;
+}
+
+.btnAdd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

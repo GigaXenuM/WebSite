@@ -1,0 +1,17 @@
+﻿@model List<Announcement>
+<div class="Header">
+    <h1>All announcements</h1>
+</div>
+
+@{
+    foreach (var item in Model)
+    {
+    <div class="Announcement mt-2">
+        <form action="/SelectedAnnouncement/Index/@item.id"><button class="btnTitle"><h2>@item.title,@item.id</h2></button></form>
+    </div>
+    }
+}
+
+<div class="btnForm">
+    <form action="/AddAnnouncement/Index"><button class="btnAdd mt-3"><h2>Add announcement</h2></button></form>
+</div>
