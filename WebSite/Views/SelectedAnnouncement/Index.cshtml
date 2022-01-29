@@ -1,8 +1,6 @@
 ﻿@model Announcement
 
-<h1>Selected announcemest</h1>
-
-<form action="/"><button class="btnHome"><h2>All announcements</h2></button></form>
+<h1 style="margin: auto; background-color: #ffbb00; text-align:center;">Selected announcement</h1>
 
 <div class="Announcement mt-2">
     <div>
@@ -11,10 +9,33 @@
     <div>
         @Model.description
     </div>
-    <div>
+    <div style="display: flex; flex-direction: row;">
         <div class="Label">Date added: </div>
         @Model.dateAdded
     </div>
-    
+</div>
 
+<div style="display: flex; flex-direction: row; margin-top: 1rem;">
+    <div style="display: flex; flex-direction: row; margin-left: 1rem;">
+        <form action="/DeleteAnnouncement/Index/@Model.id" style="margin-right: 1rem;">
+            <button class="btnDelete"><h2>Delete</h2></button>
+        </form>
+        <form action="/EditAnnouncement/Index/@Model.id" style="margin-right: 1rem;">
+            <button class="btnEdit"><h2>Edit</h2></button>
+        </form>
+    </div>
+
+    <form action="/"><button class="btnHome"><h2>All announcements</h2></button></form>
+</div>
+
+<div>
+    <h2>Similar announcements</h2>
+    @{
+        foreach (var item in ViewBag.SimilarAnnouncements)
+        {
+            <div class="Announcement mt-2">
+                <form action="/SelectedAnnouncement/Index/@item.id"><button class="btnTitle"><h2>@item.title</h2></button></form>
+            </div>
+        }
+    }
 </div>

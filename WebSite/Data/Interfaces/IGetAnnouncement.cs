@@ -9,6 +9,7 @@ namespace WebSite.Data.Interfaces
     interface IGetAnnouncement
     {
         public IEnumerable<Announcement> GetAll();
+        public IEnumerable<Announcement> GetSimilar(Announcement announcement);
         public Announcement GetObject(int id);
     }
 }

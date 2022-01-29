@@ -1,10 +1,23 @@
-﻿
+﻿<h1 style="margin: auto; background-color: #ffbb00; text-align:center;">Add announcement</h1>
 
-<div>
-    <form action="/"><button class="btnCancel"><h2>Cancel</h2></button></form>
-</div>
+<form action="/AddAnnouncement/Index" style="display: flex; flex-direction: column; margin: auto; background-color: #EEEEEE; width: 30rem; height: 20rem; margin-top: 1rem;">
+    
+    <div class="addOption">
+        <label style="width: 10rem; font-size: 1.5rem; margin-left: 1rem;">Title</label>
+        <input name="title" class="titleInput" type="text" />
+    </div>
 
-<div>
-    <label>Title</label>
-    <input class="titleInput" type="text"/>
+    <div class="addOption">
+        <label style="width: 10rem; font-size: 1.5rem;">Description</label>
+        <textarea name="description" class="descriptionInput" type="text"></textarea>
+    </div>
+
+    <div>
+        <button class="btnAdd" style="margin-bottom: 1rem;"><h2>Add</h2></button>
+    </div>
+</form>
+
+
+<div style="background-color: #EEEEEE; width: 30rem; margin: auto;">
+    <form action="/" style="width: 5rem; margin-left: 11.5rem;"><button class="btnCancel" style="margin-bottom: 1rem;"><h2>Cancel</h2></button></form>
 </div>

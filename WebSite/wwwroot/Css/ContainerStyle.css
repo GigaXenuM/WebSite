@@ -38,3 +38,16 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.btnEdit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addOption {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}

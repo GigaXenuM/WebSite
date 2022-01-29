@@ -300,3 +300,5 @@ C:\Users\CaT\Desktop\WebSite\WebSite\obj\Debug\netcoreapp3.1\WebSite.dll
 C:\Users\CaT\Desktop\WebSite\WebSite\obj\Debug\netcoreapp3.1\WebSite.pdb
 C:\Users\CaT\Desktop\WebSite\WebSite\obj\Debug\netcoreapp3.1\WebSite.genruntimeconfig.cache
 C:\Users\CaT\Desktop\WebSite\WebSite\obj\Debug\netcoreapp3.1\Razor\Views\AddAnnouncement\Index.cshtml.g.cs
+C:\Users\CaT\Desktop\WebSite\WebSite\obj\Debug\netcoreapp3.1\Razor\Views\DeleteAnnouncement\Index.cshtml.g.cs
+C:\Users\CaT\Desktop\WebSite\WebSite\obj\Debug\netcoreapp3.1\Razor\Views\EditAnnouncement\Index.cshtml.g.cs

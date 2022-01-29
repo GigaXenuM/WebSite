@@ -6,8 +6,10 @@ using WebSite.Data.Models;
 
 namespace WebSite.Data.Interfaces
 {
-    interface IAddAnnouncement
+    interface IOperationOnAnnouncement
     {
         public void Set(Announcement announcement);
+        public void Delete(Announcement announcement);
+        public void Edit(Announcement announcement, string title, string description);
     }
 }

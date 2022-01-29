@@ -13,7 +13,9 @@ namespace WebSite.Controllers
         private IGetAnnouncement announcements = new GetAnnouncement();
         public ViewResult Index(int id)
         {
-            return View(announcements.GetObject(id));
+            Announcement announcement = announcements.GetObject(id);
+            ViewBag.SimilarAnnouncements = announcements.GetSimilar(announcement);
+            return View(announcement);
         }
     }
 }
